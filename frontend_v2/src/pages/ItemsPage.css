@@ -1,0 +1,100 @@
+.items-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.items-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.items-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  gap: 20px;
+  align-items: center; /* Center items horizontally */
+}
+
+.item-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+.update-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #28a745;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.update-link:hover {
+  text-decoration: underline;
+}
+
+.no-items-message {
+  text-align: center;
+  color: #666;
+}
+
+/* Ensure the hover preview image is displayed dynamically near the cursor */
+.hover-preview {
+  position: absolute; /* Use absolute positioning for dynamic placement */
+  z-index: 1000; /* Ensure it appears above other elements */
+  border: 1px solid #ccc; /* Optional border for styling */
+  background: #fff; /* Background color to make it stand out */
+  padding: 10px; /* Padding around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+  pointer-events: none; /* Prevent the preview from interfering with mouse events */
+  text-align: center; /* Center the text below the image */
+}
+
+.hover-preview img {
+  max-width: 150px; /* Set a maximum width */
+  max-height: 150px; /* Set a maximum height */
+  object-fit: contain; /* Ensure the image scales properly without distortion */
+}
+
+.hover-preview-name {
+  margin-top: 5px; /* Add spacing between the image and the name */
+  font-size: 14px; /* Set font size for the name */
+  color: #333; /* Set text color */
+  font-weight: bold; /* Make the name bold */
+}
+
+.item-description {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}

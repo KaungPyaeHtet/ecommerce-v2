@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container {
+  padding: 20px;
+  padding-bottom: 100px; /* Adjust this value based on the height of your footer */
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer {
+  position: relative; /* Ensure it stays below the content */
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+a {
+  color: #6200ea;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
